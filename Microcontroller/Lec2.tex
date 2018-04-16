@@ -1,0 +1,150 @@
+\documentclass{book}
+
+\usepackage{lipsum}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\title{Microcontrollers \& Embeded System Design ~\textbf{\\CSE 315}}
+\author{Md Awsaf Alam}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+% \lipsum[1-3]
+\newpage
+
+\tableofcontents
+
+\chapter{8086/8088 Hardware Specifications}
+
+\section{Class Lec 2}
+
+\subsection{Introductory text}
+This is the \textbf{first} CSE 300 class in Jan 2018 term.
+This is a new \textcolor{blue}{\textbf{line}}.
+This is a new line.
+This is a new line.
+This is a new line.
+This is a new line.
+
+
+\subsection{Introductory text}
+\label{sec:intro_text}
+This is the \textbf{first} CSE 300 class in Jan 2018 term.
+This is a new \textcolor{red}{\textbf{line}}.
+This is a new line.
+This is a new line.
+
+\subsection{description}
+
+\begin{description}
+    \item[\overline{RD}]
+    \begin{itemize}
+        \item  Whenever this pin goes to logic 0, the data bus becomes receptive to data from the memory or I?O devices
+            connected to the system.
+        \item Floats to high impedence state during a hold acknowledge
+    \end{itemize}
+
+    \item[READY]
+    \begin{itemize}
+        \item uP enters into WAIT state and remains idle if this pin is at logic 0
+        \item No effect on operations of up, if this pin is at logic 1
+    \end{itemize}
+
+
+    \item[INTR]
+    \begin{itemize}
+        \item  Used to request a h/w interrupt
+        \item  If INTR is held high when $IF = 1$, the up enters an interrupt acknowledge cycle
+        ( \textcolor{purple}{INTA} becomes active) after completion of the current instruction
+    \end{itemize}
+
+    \item[TEST]
+    \begin{itemize}
+        \item  An input that is tested by the WAIT instruction
+        \item  If TEST is logic 0, the \textcolor{red}{WAIT} instruction functions as \textcolor{red}{NOP}
+        \item If TEST is logic 1, the \textcolor{red}{WAIT} instruction waits for \textit{blue}{TEST} to become 0
+
+
+   \end{itemize}
+
+   \item[NMI]
+   \begin{itemize}
+       \item Non markable interrupt pin
+       \item Similar to the INTR except that NMI does not check IF (whether it is 1)
+
+   \end{itemize}
+
+   \item[RESET]
+   \begin{itemize}
+       \item Causes the uP to reset itself if this pin remains high for a minimum of four clocking periods
+      \item whenever the up gets reset , it begins executing instructions at memory location FFFFOH
+      and disables future interrupts by clearing IF
+   \end{itemize}
+
+   \item[CLK]
+   \begin{itemize}
+       \item  Provides the base timing signal to the up
+       \item Clock signal must have at least 33\% duty cycle (high for the one-third
+       of the clocking period and low for two-third of the period)
+
+  \end{itemize}
+
+  \item[VCC]
+  \begin{itemize}
+      \item Power supply input
+      \item Provides $+5.0$ volt with 10\% tolerance to the up
+
+  \end{itemize}
+
+  \item[GND]
+  \begin{itemize}
+      \item 2 pins, both must be connected to ground
+
+  \end{itemize}
+
+  \item[MN/MX]
+  \begin{itemize}
+      \item Selects either minimum mode or maximum mode operation of the up
+  \end{itemize}
+
+
+  \item[BHE/S7]
+  \begin{itemize}
+      \item Bus high Enable
+      \item Used in 8086 to enable the most signifant data bus bits (D15 - D8) during a read or
+      write operations
+      \item The state of S7 is always a logic 1
+  \end{itemize}
+
+% \subsection{Minimum Mode Pins}
+
+Minimum Mode Pins
+
+  \item[IO/M or M/IO]
+  \begin{itemize}
+      \item Selects memory or I/O
+      \item Indicates
+  \end{itemize}
+
+
+\end{description}
+
+
+
+\section{Figures}
+
+Here, we will import figures. Figure \ref{fig:bl} is our figure.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.3\textwidth]{figures/logo.png}
+    \caption{BUET Logo}
+    \label{fig:bl}
+\end{figure}
+
+\lipsum
+
+\end{document}
