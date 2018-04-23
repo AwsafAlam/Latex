@@ -1,0 +1,186 @@
+\documentclass{article}
+
+\usepackage{lipsum}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\newcommand{\FT}{Fourier Transform}
+\newcommand{\anothertestcommand}[2]{Welcome, #2! Mighty #1!!!}
+
+
+\title{CSE300\_Assignment1\\Introduction to \LaTeX \\Fourier Analysis}
+\author{Md Awsaf Alam\\Student ID: 1505114}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{figure}[b!]
+    \centering
+    \includegraphics[width = 0.15\textwidth]{figures/logo.png}
+    \centering
+
+\bigskip
+    \large Department of Computer Science and Engineering \\
+    \bigskip
+\large Bangladesh University of Engineering and Technology\\
+\bigskip
+\large (BUET)\\
+\bigskip
+\large Dhaka 1000\\
+\bigskip
+\date{\today}\\
+\bigskip
+\end{figure}
+
+
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Fourier Representation of Signals and Systems}
+
+\subsection{Introduction to Signals}
+In mathematical terms, a signal is ordinarily described as a \textit{function of time}, which is how
+we usually see the signal when its waveform is displayed on an oscilloscope.However,from the perspective of a communication system it is important
+that we know the \textit{frequency content} of the signal in question. The mathematical tool that
+relates the frequency-domain description of the signal to its time-domain description is the
+Fourier transform. There are in fact several versions of the Fourier transform available. In this article we will discuss about two specific versions:
+\begin{itemize}
+    \item The \textit{continuous Fourier transform}, or the \textbf{\FT (FT)} for short, which
+works with continuous functions in both the time and frequency domains.
+    \item The \textit{discrete Fourier transform}, or DFT for short, which works with discrete data in
+both the time and frequency domains.
+\end{itemize}
+
+\subsection{The Fourier Transform}
+\label{sec:fourier_transform}
+\subsubsection{Definition}
+Let $g(t)$ denote a \textit{nonperiodic deterministic signal}, expressed as some function of time t.
+By definition, the Fourier transform of the signal $ g(t)$ is given by the integral
+\begin{equation}
+    G(f) = \int_{-\infty}^{\infty} g(t) e^{-j2\pi ft}dt
+    \label{eqn:e1}
+\end{equation}
+where $j = \sqrt{-1}$ , and the variable f denotes \textcolor{blue}{frequency}; the exponential function
+$ e^{-j2\pi ft} $is referred to as the \textit{kernel} of the formula defining the Fourier transform.
+Given the Fourier transform $G(f) $, the original signal $g(t)$  is recovered exactly using the formula for the \textit{inverse} Fourier transform:
+\begin{equation}
+    g(t) = \int_{-\infty}^{\infty} G(f) e^{j2\pi ft}dt
+    \label{eqn:e2}
+\end{equation}
+where the exponential $ e^{j2\pi ft} $ is the \textit{kernel} of the formula defining the inverse Fourier
+transform. The two kernels of Eqs. \ref{eqn:e1} and \ref{eqn:e2} are therefore the complex conjugate of
+each other.
+We refer to Eq. \ref{eqn:e1} as the \textbf{\textit{analysis}} equation. Given the time-domain behavior of a
+system, we are enabled to analyze the frequency-domain behavior of a system. The basic
+advantage of transforming the time-domain behavior into the frequency domain is that
+\textit{resolution into eternal sinusoids presents the behavior as the superposition of steady-state}
+effects. For systems whose time-domain behavior is described by linear differential equations, the separate steady-state solutions are usually simple to understand in theoretical as
+well as experimental terms.
+\par Conversely, we refer to Eq. \ref{eqn:e2} as the \textbf{\textit{synthesis}} equation. Given the superposition
+of steady-state effects in the frequency-domain, we can \textit{reconstruct the original time-domain
+behavior of the system without any loss of information}. The analysis and synthesis equations, working side by side as depicted in Fig. \ref{fig:f1}, enrich the representation of signals and systems by making it possible to view the representation in two interactive domains: the
+time domain and the frequency domain.
+
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.7\textwidth]{figures/sketch_1.png}
+    \caption{Sketch of the interplay
+between the synthesis and analysis
+equations embodied in Fourier
+transformation.}
+    \label{fig:f1}
+\end{figure}
+
+\subsubsection{Dirichlet’s conditions}
+For the \FT of a signal $g(t) $ to exist, it is sufficient, but not necessary,
+that $g(t)$ satisfies three conditions known collectively as \textit{Dirichlet’s conditions}:
+\begin{enumerate}
+    \item The function $g(t) $  is single-valued, with a finite number of maxima and minima in any
+finite time interval.
+    \item The function $g(t)$  has a finite number of discontinuities in any finite time interval.
+    \item The function $g(t)$ is absolutely integrable—that is,
+    \begin{equation*}
+        \int_{-\infty}^{\infty} | g(t) | dt < \infty 
+    \end{equation*}
+
+\end{enumerate}
+
+\subsection{Properties of the Fourier Transform}
+It is useful to have insight into the relationship between a time function  $g(t)$   and its Fourier
+transform  $G(f)$  , and also into the effects that various operations on the function  $g(t)$   have
+on the transform  $G(f)$  . This may be achieved by examining certain properties of the Fourier
+transform.
+There are four properties of \textbf{Fourier Transform}
+Due to shortage of time we will only be able to discuss one property in this section.\par
+\textbf{\textit{PROPERTY 1} : Linearity (Superposition)}
+\par Let $g_1(t) \Longleftrightarrow G_1(f) ~and~ g_2(t) \Longleftrightarrow G_2(f) $. Then for
+all constants $ c_1 $and $c_2$ we have $$ c_{1}g_{1}(t) + c_{2}g_{2}(t) \Longleftrightarrow c_{1}G_{1}(f) + c_{2}G_{2}(f) $$ 
+
+Property 1 permits us to find the Fourier transform $G(f)$ of a function  $g(t)$  that is a
+linear combination of two other functions  $g_1(t)$  and  $g_2(t)$  whose Fourier transforms  $G_1(f)$ 
+and $G_2(f)$ are known.
+
+
+
+\section{Fourier Series}
+In the previous section \ref{sec:fourier_transform}, we studied the \textbf{Fourier Transform}. Now, we will review the formulation of the \textbf{Fourier series} and develop the Fourier
+transform as a generalization of the Fourier series.
+
+\subsection{Fourier Series Expansion}
+Let $gT_0(t)$ denote a \textit{periodic} signal with period $T_0$ . By using a Fourier series expansion of 
+this signal, we are able to resolve it into an infinite sum of sine and cosine terms.
+The expansion may be expressed in the trigonometric form:
+\begin{equation}
+    gT_0(t) = a_0 + 2 \sum_{n=1}^{\infty} [ a_n cos(2\pi n f_0 t) + b_n sin(2\pi n f_0 t)]
+\end{equation}
+where $ f_0$ is the \textit{fundamental frequency}: 
+\begin{equation}
+    f_0 = \frac{1}{T_0}
+\end{equation}
+
+\subsection{Non Periodic function}
+We can develop a  representation for a signal $g(t)$   that is non-periodic in terms of complex exponential signals. 
+In order to do this, we first construct a periodic function $ gT_0(t)$ of period $ T_0 $ in such a way
+that $g(t)$ defines one cycle of this periodic function, as illustrated in Fig. \ref{fig:figu}
+In the limit, we let the period $T_0 $ become infinitely large, so that we may
+write
+\begin{equation}
+    g(t) =  \lim_{T_0\to\infty} gT_0(t)
+\end{equation}
+
+\begin{figure}[h!]
+ 
+% \begin{subfigure}
+\includegraphics[width=0.8\textwidth]{figures/sketch_2.png} 
+% \caption{Arbitrarily defined function of time $g(t) $.}
+\label{fig:f2}
+% \end{subfigure}
+
+% \begin{subfigure}
+\includegraphics[width=0.8\textwidth]{figures/Sketch_3.png}
+% \caption{Periodic waveform
+% $gI_0(t) $ based on $g(t)$}
+\label{fig:f3}
+% \end{subfigure}
+ 
+\caption{Illustration of the use of an arbitrarily defined function of time to construct
+a periodic waveform.}
+\label{fig:figu}
+
+\end{figure}
+\newpage
+\section{Some Applications of Fourier Analysis}
+\begin{description}
+    \item[Fourier synthesis] The operation of rebuilding the function from these pieces is known as \textbf{Fourier synthesis}. For example, determining what component frequencies are present in a musical note would involve computing the \FT of a sampled musical note. One could then re-synthesize the same sound by including the frequency components as revealed in the Fourier analysis. In mathematics, the term Fourier analysis often refers to the study of both operations. 
+    
+    \item[Fourier transformation] The Fourier transform (FT) decomposes a function of time (a signal) into the frequencies that make it up, in a way similar to how a musical chord can be expressed as the frequencies (or pitches) of its constituent notes.
+\end{description}
+
+
+\end{document}
+
