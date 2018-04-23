@@ -1,0 +1,95 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{subcaption}
+\usepackage{biblatex}
+
+\addbibresource{example.bib}
+
+\title{Introduction to table}
+\author{Awsaf Alam }
+\date{April 2018}
+
+\begin{document}
+
+\maketitle
+
+\listoftables
+
+\section{Table}
+See the first table \ref{tab:table}
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|m{2cm}|m{2cm}|m{3cm}|}
+    \hline
+    Name & 
+    \multicolumn{2}{c|}{Statistics} \\
+    \hline
+    \hline
+    Tamim & 80  & 30\\
+    \hline
+    Imrul & 30 & 80\\
+    \hline
+    
+    \end{tabular}
+    \caption{Caption}
+    \label{tab:table}
+\end{table}
+
+\section{SubTable}
+
+The following table contains two tables
+\begin{table}[h!]
+  \begin{subtable}{0.45\textwidth}
+        \begin{tabular}{|m{2cm}|m{2cm}|m{3cm}|}
+        \hline
+            Name & 
+            \multicolumn{2}{c|}{Statistics} \\
+            \hline
+            \hline
+            Tamim & 80  & 30\\
+            \hline
+            Imrul & 30 & 80\\
+            \hline
+            
+        \end{tabular}
+    \caption{First}
+    \label{subtab:1}
+    \end{subtable}
+   
+   
+   \begin{subtable}{0.45\textwidth}
+        \begin{tabular}{|m{2cm}|m{2cm}|m{3cm}|}
+        \hline
+            Name & 
+            \multicolumn{2}{c|}{Statistics} \\
+            \hline
+            \hline
+            Tamim & 80  & 30\\
+            \hline
+            Imrul & 30 & 80\\
+            \hline
+            
+        \end{tabular}
+    \caption{Second}
+    \label{subtab:2}
+    
+    \end{subtable}
+    
+    \caption{Caption}
+    % \label{tab:my_label}
+\end{table}
+
+\section{Bibliogaphy}
+My paper is better than \cite{Aggarwal:2009}.
+% But in some cases, my paper is not as good as the work done by \cite{Pei:2000}. 
+
+% \bibliographystyle{unsrt}
+% \bibliographystyle{alpha}
+% \bibliographystyle{abbr}
+% \bibliographystyle{plain}
+% \bibliography{example}
+
+\printbibliography
+
+\end{document}
