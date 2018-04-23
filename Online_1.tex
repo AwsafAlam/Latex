@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage{lipsum}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\newcommand{\FT}{Fourier Transform}
+\newcommand{\anothertestcommand}[2]{Welcome, #2! Mighty #1!!!}
+
+\title{CSE300\_Online1\\Differential Equation}
+\author{Md Awsaf Alam\\Student ID: 1505114}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\section{Existence of solutions}
+Solving differential equations is not like solving \textcolor{blue}{algebraic equations}. Not only are their solutions often unclear, but whether solutions are unique or exist at all are also notable subjects of interest.
+
+\par For first order initial value problems, the \textcolor{blue}{Peano existence theorem} gives one set of circumstances in which a solution exists. Given any point $\textbf{\textit{(a,b)}} $ in the xy-plane, define some rectangular region {\displaystyle Z} , such that {\displaystyle Z=[l,m]\times [n,p]} and  $\textbf{\textit{(a,b)}} $ is in the interior of . If we are given a differential equation $\frac {dy}{dx} = g(x,y) $ and the condition that $ y=b $when $x=a$, then there is locally a solution to this problem if $ g(x,y)$ and $\frac {\partial g}{\partial x}$ are both continuous on {\displaystyle Z} . This solution exists on some interval with its center at  \textbf{\textit{a}}. The solution may not be unique. (See \textcolor{blue}{Ordinary differential equation} for other results.)
+
+\par However, this only helps us with first order initial value problems. Suppose we had a linear initial value problem of the nth order:
+\begin{equation}
+    f_n(x) \frac{d^n y}{dx^n} + \cdot \cdot \cdot+f_1(x)\frac{dy}{dx} + f_0(x)y = g(x)
+\end{equation}
+
+\section{Figure}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width = 0.3\textwidth]{figures/sketch.png}
+    \caption{Visualization of heat transfer in a pump casing, created by solving the heat equation. Heat is being generated internally in the casing and being cooled at the boundary, providing a steady state temperature distribution.}
+    \label{fig:bl}
+\end{figure}
+
+
+\end{document}
