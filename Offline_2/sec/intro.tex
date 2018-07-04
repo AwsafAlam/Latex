@@ -1,0 +1,81 @@
+In this document, we present the very famous theorem in mathematics: \textit{Pythagorean
+theorem}, which is stated as follows.\\
+\newline
+\textbf{Theorem 1.1 (Pythagorean theorem)} \textit{The square of the hypotenuse (the
+side opposite the right angle) is equal to the sum of the squares of the other two
+sides.}
+\par Numerous mathematicians proposed various proofs to the theorem. The
+theorem was long known even before the time of Pythagoras. Pythagoras was
+the first to provide with a sound proof. The proof that Pythagoras gave was
+by rearrangement. Even the great Albert Einstein also proved the theorem
+without \textit{rearrangement}, rather by using dissection. Figure \ref{fig:1} shows the visual
+representation of the theorem.
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=0.5]
+
+        \fill [blue!13!white ] (0,0) rectangle (15,15);
+
+        \draw [blue] (8,8) rectangle (7.7,8.3);
+        \draw [red ,line width=0.7pt] (6 , 8) -- (8,8) -- (8,12) -- (6,8);
+
+        \fill [cyan ,rotate=63.4, anchor = mid west,xshift=3.9cm , yshift= -9.75cm] (6,8) rectangle (10.47,12.47);
+        \node [darkpurple ,scale = 1.4pt, left] at (7.1 , 10.2){\fontfamily{lmtt}\selectfont c};
+
+        \fill [skinorange] (8.03,8) rectangle (12.13,12.1);
+        \node [darkpurple ,scale = 1.4pt,right] at (7.9, 9.7){\fontfamily{lmtt}\selectfont b};
+
+        \fill [violet!65] (6,7.97) rectangle (8,5.97);
+        \node [darkpurple ,scale = 1.4pt, below] at (7 , 8){\fontfamily{lmtt}\selectfont a};
+
+        \fill [fill=cyan] (1.4,1) rectangle (5.9,5.47);
+        \fill [violet!65] (7,2) rectangle (9,4);
+        \fill [skinorange] (10,1) rectangle (14,5);
+
+        \node [darkpurple ,scale = 1.2pt, above] at (4 , 2.5){$\fontfamily{lmtt}\selectfont \textbf{c}^2$};
+        \node [darkpurple ,scale = 1.4pt, above] at (6.4 , 2.5){$\fontfamily{lmtt}\selectfont \textbf{=}$};
+
+        \node [darkpurple ,scale = 1.1pt, above] at (8 , 2.5){$\fontfamily{lmtt}\selectfont \textbf{a}^2$};
+        \node [darkpurple ,scale = 1.4pt, above] at (9.5 , 2.5){$\fontfamily{lmtt}\selectfont \textbf{+}$};
+
+        \node [darkpurple ,scale = 1.2pt, above] at (12 , 2.5){$\fontfamily{lmtt}\selectfont \textbf{b}^2$};
+
+    \end{tikzpicture}
+
+    \caption{Visual representation of the famous Pythagorean theorem.}
+    \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[scale=0.5]
+
+       \draw [darkblue,line width= 0.5pt] (-4.7,0) -- (4.7,0);
+       \draw [darkblue,line width= 0.5pt] (0,-4.7) -- (0,4.7);
+
+       \draw [blue] (0,1.5) -- (3.7,1.5);
+       \draw [darkblue,line width= 0.7pt,{latex'[width= 5pt, length=5pt]}-{latex'[width= 5mm, length=5mm]}] (0,2) -- (3.7,2);
+       \node [scale = 0.9pt, above] at (1.7 , 2.1){$cos ~\theta$};
+
+       \draw (3.7,1.5) -- (4.7,1.5);
+
+       \draw [blue] (3.7,0) -- (3.7,1.5);
+       \draw [darkblue,line width= 0.7pt,{latex'[width= 5pt, length=5pt]}-{latex'[width= 5mm, length=5mm]}] (4.2,0) -- (4.2,1.5);
+       \node [scale = 0.9pt, right] at (4.3, 0.75){$sin ~\theta$};
+
+       \draw (3.7,1.5) -- (3.7,2.5);
+
+       \draw [blue](1.35 , 0) to [in=5,out=55] (1.2, 0.50);
+       \node [scale = 0.7pt ,above] at (1.65, -0.02){$\theta$};
+
+       \draw [red,line width= 1.1pt] (0,0) -- (3.7,1.5);
+      \node [scale = 0.7pt,red,rotate = 22 ,right] at (1.2, 0.75){$r = 1$};
+
+      \draw[darkblue,line width= 1.3pt] (0,0) circle (4);
+
+    \end{tikzpicture}
+
+    \caption{Alternate representation of Pythagorean theorem.}
+    \label{fig:2}
+\end{figure}
