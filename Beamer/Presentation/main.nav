@@ -2,46 +2,50 @@
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
-\headcommand {\sectionentry {1}{Introduction}{3}{Introduction}{0}}
+\headcommand {\sectionentry {1}{What is a Priority Queue?}{3}{What is a Priority Queue?}{0}}
 \headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\beamer@sectionpages {3}{4}}
-\headcommand {\beamer@subsectionpages {3}{4}}
-\headcommand {\sectionentry {2}{Problem Definition}{5}{Problem Definition}{0}}
-\headcommand {\slideentry {2}{0}{1}{5/5}{}{0}}
+\headcommand {\slideentry {1}{0}{3}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {2}{0}{2}{6/6}{}{0}}
-\headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {2}{0}{3}{7/10}{}{0}}
-\headcommand {\beamer@framepages {7}{10}}
-\headcommand {\beamer@sectionpages {5}{10}}
-\headcommand {\beamer@subsectionpages {5}{10}}
-\headcommand {\sectionentry {3}{Motivation}{11}{Motivation}{0}}
-\headcommand {\slideentry {3}{0}{1}{11/11}{}{0}}
-\headcommand {\beamer@framepages {11}{11}}
-\headcommand {\slideentry {3}{0}{2}{12/12}{}{0}}
+\headcommand {\slideentry {1}{0}{4}{6/11}{}{0}}
+\headcommand {\beamer@framepages {6}{11}}
+\headcommand {\beamer@sectionpages {3}{11}}
+\headcommand {\beamer@subsectionpages {3}{11}}
+\headcommand {\sectionentry {2}{Problem Definition}{12}{Problem Definition}{0}}
+\headcommand {\slideentry {2}{0}{1}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@sectionpages {11}{12}}
-\headcommand {\beamer@subsectionpages {11}{12}}
-\headcommand {\sectionentry {4}{Design}{13}{Design}{0}}
-\headcommand {\slideentry {4}{0}{1}{13/13}{}{0}}
+\headcommand {\slideentry {2}{0}{2}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@sectionpages {13}{13}}
-\headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\sectionentry {5}{Previous Works}{14}{Previous Works}{0}}
-\headcommand {\slideentry {5}{0}{1}{14/14}{}{0}}
-\headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {5}{0}{2}{15/17}{}{0}}
-\headcommand {\beamer@framepages {15}{17}}
-\headcommand {\beamer@sectionpages {14}{17}}
-\headcommand {\beamer@subsectionpages {14}{17}}
-\headcommand {\sectionentry {6}{Conclusion}{18}{Conclusion}{0}}
-\headcommand {\slideentry {6}{0}{1}{18/18}{}{0}}
+\headcommand {\slideentry {2}{0}{3}{14/17}{}{0}}
+\headcommand {\beamer@framepages {14}{17}}
+\headcommand {\beamer@sectionpages {12}{17}}
+\headcommand {\beamer@subsectionpages {12}{17}}
+\headcommand {\sectionentry {3}{Motivation}{18}{Motivation}{0}}
+\headcommand {\slideentry {3}{0}{1}{18/18}{}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@partpages {1}{18}}
-\headcommand {\beamer@subsectionpages {18}{18}}
-\headcommand {\beamer@sectionpages {18}{18}}
-\headcommand {\beamer@documentpages {18}}
-\headcommand {\gdef \inserttotalframenumber {12}}
+\headcommand {\slideentry {3}{0}{2}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\beamer@sectionpages {18}{19}}
+\headcommand {\beamer@subsectionpages {18}{19}}
+\headcommand {\sectionentry {4}{Design}{20}{Design}{0}}
+\headcommand {\slideentry {4}{0}{1}{20/20}{}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@sectionpages {20}{20}}
+\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\sectionentry {5}{Previous Works}{21}{Previous Works}{0}}
+\headcommand {\slideentry {5}{0}{1}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\slideentry {5}{0}{2}{22/24}{}{0}}
+\headcommand {\beamer@framepages {22}{24}}
+\headcommand {\beamer@sectionpages {21}{24}}
+\headcommand {\beamer@subsectionpages {21}{24}}
+\headcommand {\sectionentry {6}{Conclusion}{25}{Conclusion}{0}}
+\headcommand {\slideentry {6}{0}{1}{25/25}{}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@partpages {1}{25}}
+\headcommand {\beamer@subsectionpages {25}{25}}
+\headcommand {\beamer@sectionpages {25}{25}}
+\headcommand {\beamer@documentpages {25}}
+\headcommand {\gdef \inserttotalframenumber {14}}
