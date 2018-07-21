@@ -53,15 +53,20 @@ BUET
 \subfile{sec/definition.tex}
 
 
-\section{Application of Priority Queue}
+\section{Example of Priority Queue}
 \subfile{sec/application.tex}
 
 \section{Other Applications}
-\begin{frame}{Simulation}
-  A Binary (Max) Heap is a complete binary tree that maintains the Max Heap property.
-  Binary Heap is one possible data structure to model an efficient Priority Queue (PQ) Abstract Data Type (ADT). In a PQ, each element has a "priority" and an element with higher priority is served before an element with lower priority (ties are broken with standard First-In First-Out (FIFO) rule as with normal Queue). Try clicking ExtractMax() for a sample animation on extracting the max value of random Binary Heap above.
-  To focus the discussion scope, we design this visualization to show a Binary Max Heap that contains distinct integers only.
+\begin{frame}{Applications}
+\begin{itemize}
+  \item  Dijkstra’s Shortest Path Algorithm using priority queue: When the graph is stored in the form of adjacency list or matrix, priority queue can be used to extract minimum efficiently when implementing Dijkstra’s algorithm.
+  \item  Prim’s algorithm: It is used to implement Prim’s Algorithm to store keys of nodes and extract minimum key node at every step.
+  \item  Data compression : It is used in Huffman codes which is used to compresses data.
+
+\end{itemize}
+
 \end{frame}
+
 
 \section{Implementations of Priority Queue}
 \begin{frame}{Implementations of Priority Queue}
@@ -71,20 +76,6 @@ BUET
   \item Binary Heap
 \end{itemize}
 
-\end{frame}
-
-
-\section{Previous Works}
-\begin{frame}{Blocks}
-    \begin{block}{Sample Block}
-    This is a sample block.
-    \end{block}
-    \begin{alertblock}{Sample Alert Block}
-    This is a sample \textbf<2>{alert block}.
-    \end{alertblock}
-    \begin{example}
-    Sample \textcolor<3->{red}{example}.
-    \end{example}
 \end{frame}
 
 \section{Binary Max Heap}
