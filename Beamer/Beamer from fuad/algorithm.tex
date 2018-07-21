@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{algorithmic}
+
+
+
+\begin{document}
+
+
+\textsc{Max-Heapify}(A,\textit{i})
+
+\begin{algorithmic}
+
+\STATE $l\gets \textsc{Left}(i)$
+\STATE $r\gets \textsc{Right}(i)$
+\IF {$l\leq heap\_size[A]~ and~ A[l]>A[i]$} 
+\STATE $largest \gets l$
+\ELSE
+    $largest \gets i$
+\ENDIF 
+
+\IF {$r\leq heap\_size[A]~ and~ A[r]>A[largest]$} 
+\STATE $largest \gets r$
+\ENDIF
+
+\IF {$largest \neq i$} 
+\STATE exchange $A[i]\leftrightarrow A[largest]$
+\ENDIF \\
+\textsc{Max-Heapify}(A,\textit{largest})
+\end{algorithmic}
+
+
+\end{document}
