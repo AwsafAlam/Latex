@@ -71,13 +71,20 @@
 \headcommand {\beamer@framepages {36}{36}}
 \headcommand {\beamer@sectionpages {22}{36}}
 \headcommand {\beamer@subsectionpages {22}{36}}
-\headcommand {\sectionentry {6}{Conclusion}{37}{Conclusion}{0}}
+\headcommand {\sectionentry {6}{Algorithm}{37}{Algorithm}{0}}
 \headcommand {\slideentry {6}{0}{1}{37/37}{}{0}}
 \headcommand {\beamer@framepages {37}{37}}
 \headcommand {\slideentry {6}{0}{2}{38/38}{}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\beamer@partpages {1}{38}}
-\headcommand {\beamer@subsectionpages {37}{38}}
 \headcommand {\beamer@sectionpages {37}{38}}
-\headcommand {\beamer@documentpages {38}}
-\headcommand {\gdef \inserttotalframenumber {30}}
+\headcommand {\beamer@subsectionpages {37}{38}}
+\headcommand {\sectionentry {7}{Conclusion}{39}{Conclusion}{0}}
+\headcommand {\slideentry {7}{0}{1}{39/39}{}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\slideentry {7}{0}{2}{40/40}{}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\beamer@partpages {1}{40}}
+\headcommand {\beamer@subsectionpages {39}{40}}
+\headcommand {\beamer@sectionpages {39}{40}}
+\headcommand {\beamer@documentpages {40}}
+\headcommand {\gdef \inserttotalframenumber {32}}
